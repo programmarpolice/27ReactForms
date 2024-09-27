@@ -17,11 +17,11 @@ export default function SignUpForm({ setToken }) {
         }
       );
       const result = await response.json();
-      console.log(result);
+      setToken(result.message);
     } catch (error) {
       setError(error.message);
     }
-    setToken(result.token);
+    console.log(setToken);
   }
 
   return (
