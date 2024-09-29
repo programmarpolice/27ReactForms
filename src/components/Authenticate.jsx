@@ -1,3 +1,5 @@
+//Worked on w/Blake, Alexis, Bertha, Joy and Kristen
+
 import { useState } from "react";
 
 export default function Authenticate({ token }) {
