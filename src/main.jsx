@@ -8,3 +8,5 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+
+//Worked on w/Blake, Alexis, Bertha, Joy and Kristen

@@ -5,6 +5,7 @@ import { useState } from "react";
 export default function Authenticate({ token }) {
   const [successMessage, setSuccessMessage] = useState(null);
   const [error, setError] = useState(null);
+  const [username, setUsername] = useState(null) //possibly delete this 
 
   async function handleClick() {
     try {
@@ -20,6 +21,7 @@ export default function Authenticate({ token }) {
       );
       const result = await response.json();
       setSuccessMessage(result.message);
+      setUsername(result.username); //possibly delete this
     } catch (error) {
       setError(error.message);
     }
