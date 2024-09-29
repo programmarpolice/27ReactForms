@@ -7,6 +7,11 @@
   text-align: center;
 }
 
+h2 {
+  box-shadow: 4px; color: mediumslateblue;
+  text-shadow: #646cffaa;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
