@@ -11,3 +11,6 @@ export default function App() {
     </>
   );
 }
+
+
+//Worked on w/Blake, Alexis, Bertha, Joy and Kristen//
