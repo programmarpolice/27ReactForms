@@ -20,9 +20,11 @@ export default function Authenticate({ token }) {
         }
       );
       const result = await response.json();
+    console.log("here")
+    console.log(result)
+    console.log("there")
       setSuccessMessage(result.message);
-      setUsername(result.username); //possibly delete this
-      console.log(setUsername(result.username))
+      setUsername(result.data.username); //possibly delete this
     } catch (error) {
       setError(error.message);
     }
@@ -33,7 +35,9 @@ export default function Authenticate({ token }) {
       <h2> Authenticate! </h2>
       {successMessage && <p>{successMessage}</p>}
       {error && <p> {error} </p>}
+      {username && <p> username: {username} </p>} 
       <button onClick={handleClick}>Authenticate Token!</button>
     </div>
   );
 }
+
